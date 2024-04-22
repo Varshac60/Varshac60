@@ -1,0 +1,58 @@
+public class TrafficLight {
+    // Private member variables representing the colors
+    private String red;
+    private String yellow;
+    private String green;
+
+    // Constructor to initialize all three colors to "OFF"
+    public TrafficLight() {
+        this.red = "OFF";
+        this.yellow = "OFF";
+        this.green = "OFF";
+    }
+
+    // Method to set the status of red light
+    public void setRed(String status) {
+        this.red = status;
+    }
+
+    // Method to get the status of red light
+    public String getRed() {
+        return this.red;
+    }
+
+    // Method to set the status of yellow light
+    public void setYellow(String status) {
+        this.yellow = status;
+    }
+
+    // Method to get the status of yellow light
+    public String getYellow() {
+        return this.yellow;
+    }
+
+    // Method to set the status of green light
+    public void setGreen(String status) {
+        this.green = status;
+    }
+
+    // Method to get the status of green light
+    public String getGreen() {
+        return this.green;
+    }
+
+    public static void main(String[] args) {
+        // Create an instance of the TrafficLight class using parameterized constructor
+        TrafficLight trafficLight = new TrafficLight();
+
+        // Demonstrate changing the status of each light
+        trafficLight.setRed("ON");
+        trafficLight.setYellow("ON");
+        trafficLight.setGreen("ON");
+
+        // Display the status of each light
+        System.out.println("Red light status: " + trafficLight.getRed());
+        System.out.println("Yellow light status: " + trafficLight.getYellow());
+        System.out.println("Green light status: " + trafficLight.getGreen());
+    }
+}
